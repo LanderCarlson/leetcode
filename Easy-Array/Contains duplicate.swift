@@ -1,0 +1,15 @@
+/*
+https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/578/
+Contains Duplicate
+Given an array of integers, find if the array contains any duplicates.
+Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
+*/
+class Solution{
+    func containsDuplicate(_ nums: [Int]) -> Bool{
+        if nums.count == Set(nums).count{
+            return false
+        }else{
+            return true
+        }
+    }
+}
